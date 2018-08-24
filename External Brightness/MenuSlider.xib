@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CMMenuSlider" customModule="External_Brightness" customModuleProvider="target">
+            <connections>
+                <outlet property="content" destination="c22-O7-iKe" id="rmt-ys-uhA"/>
+                <outlet property="slider" destination="gKP-Q9-wGP" id="qPw-rK-E9Q"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView focusRingType="none" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="28"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gKP-Q9-wGP">
+                    <rect key="frame" x="20" y="4" width="202" height="19"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ZUt-rb-WHp"/>
+                </slider>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gKP-Q9-wGP" secondAttribute="trailing" id="MgC-8x-crI"/>
+                <constraint firstItem="gKP-Q9-wGP" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="OfV-vV-n1H"/>
+                <constraint firstItem="gKP-Q9-wGP" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="22" id="da8-Sg-TvT"/>
+            </constraints>
+            <point key="canvasLocation" x="312" y="181"/>
+        </customView>
+    </objects>
+</document>
